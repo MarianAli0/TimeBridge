@@ -5,6 +5,10 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+
+/**
+ * Panel for managing journal entries, including displaying, editing, and deleting entries.
+ */
 public class JournalPanel extends JPanel {
     private DefaultListModel<JournalEntry> listModel;
 

@@ -5,6 +5,10 @@ import com.toedter.calendar.JCalendar;
 import java.awt.*;
 import java.util.Date;
 
+
+/**
+ * Panel for displaying a calendar and adding journal entries for specific dates.
+ */
 public class CalendarPanel extends JPanel {
     private JCalendar calendar;
     private JButton addJournalButton;
@@ -27,10 +31,17 @@ public class CalendarPanel extends JPanel {
         addJournalButton.setVisible(false);
     }
 
+    
+    /**
+     * Shows the "Add Journal" button when a date is selected.
+     */
     private void showAddJournalButton(Date selectedDate) {
         addJournalButton.setVisible(true);
     }
 
+    /**
+     * Displays a dialog for entering a journal entry for the selected date.
+     */
     private void showJournalDialog(Date date) {
         String dateString = date.toString();
         JTextArea textArea = new JTextArea(5, 20);
